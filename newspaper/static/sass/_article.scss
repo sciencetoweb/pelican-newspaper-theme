@@ -1,5 +1,16 @@
 // Articles styles
 
+article { 
+    .entry-title {
+        border-bottom:1px solid #333;
+    }
+
+    img { 
+        border:1px solid #ccc;
+        padding:10px;
+    }
+}
+
 .published { 
     margin-bottom:5px;
 }

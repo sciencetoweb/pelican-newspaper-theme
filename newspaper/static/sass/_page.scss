@@ -1,0 +1,13 @@
+body { 
+    background-color:#f6f6f6;
+}
+
+#banner, #contentinfo{ 
+    background-image:url("../images/newspaper/asfalt.png");
+    color:$secondaryColor;
+    a { color:$secondaryColor }
+}
+
+#contentinfo { 
+    padding:20px 0;
+}

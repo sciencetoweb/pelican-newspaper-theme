@@ -153,7 +153,7 @@ p a, p a:visited {
 
 /* line 24, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.0.9/scss/foundation/common/_globals.scss */
 .highlight {
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 /* line 26, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.0.9/scss/foundation/common/_globals.scss */
@@ -296,7 +296,7 @@ small {
 /* line 38, ../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-3.0.9/scss/foundation/common/_typography.scss */
 code {
   font-weight: bold;
-  background: #f7f7f7;
+  background: #f6f6f6;
 }
 
 /* Lists ---------------------- */
@@ -4212,11 +4212,11 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 /* line 15, ../sass/_base.scss */
 a {
   padding-bottom: -5px;
-  border-bottom: 1px dotted #ba0000;
+  border-bottom: 1px dotted #990100;
 }
 /* line 18, ../sass/_base.scss */
 a:hover {
-  border-bottom: 1px solid #ba0000;
+  border-bottom: 1px solid #990100;
 }
 
 /* line 23, ../sass/_base.scss */
@@ -4245,43 +4245,25 @@ h2 {
 /* line 44, ../sass/_base.scss */
 code {
   font-weight: normal;
+  font-size: 0.9em;
   padding: 3px;
 }
 
-/* line 49, ../sass/_base.scss */
-.published {
-  margin-bottom: 5px;
-}
-
-/* line 53, ../sass/_base.scss */
-.author {
-  margin-bottom: 25px;
-  color: #666464;
-  text-indent: 0px;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-style: normal;
-}
-/* line 60, ../sass/_base.scss */
-.author > a {
-  text-transform: uppercase;
-}
-
-/* line 65, ../sass/_base.scss */
+/* line 50, ../sass/_base.scss */
 aside p {
   font-style: normal;
 }
 
-/* line 67, ../sass/_base.scss */
+/* line 52, ../sass/_base.scss */
 p, ul > li {
   font-size: 1.5em!important;
 }
 
-/* line 71, ../sass/_base.scss */
+/* line 56, ../sass/_base.scss */
 p {
   margin-bottom: 10px;
 }
-/* line 74, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 p.intro {
   margin-bottom: 25px;
   text-indent: 0px;
@@ -4293,12 +4275,42 @@ p.intro {
   line-height: 50px;
 }
 
-/* line 3, ../sass/_article.scss */
+/* line 1, ../sass/_page.scss */
+body {
+  background-color: #f6f6f6;
+}
+
+/* line 5, ../sass/_page.scss */
+#banner, #contentinfo {
+  background-image: url("../images/newspaper/asfalt.png");
+  color: white;
+}
+/* line 8, ../sass/_page.scss */
+#banner a, #contentinfo a {
+  color: white;
+}
+
+/* line 11, ../sass/_page.scss */
+#contentinfo {
+  padding: 20px 0;
+}
+
+/* line 4, ../sass/_article.scss */
+article .entry-title {
+  border-bottom: 1px solid #333;
+}
+/* line 8, ../sass/_article.scss */
+article img {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* line 14, ../sass/_article.scss */
 .published {
   margin-bottom: 5px;
 }
 
-/* line 7, ../sass/_article.scss */
+/* line 18, ../sass/_article.scss */
 .author {
   margin-bottom: 25px;
   color: #666464;
@@ -4307,7 +4319,7 @@ p.intro {
   font-size: 14px;
   font-style: normal;
 }
-/* line 14, ../sass/_article.scss */
+/* line 25, ../sass/_article.scss */
 .author > a {
   text-transform: uppercase;
 }

@@ -37,22 +37,24 @@
     </head>
     <body>
 
-        <header id="banner" class="row">
-            <div class="twelve columns">
-                <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
-                <nav><ul>
-                    {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                    {% endfor %}
-                    {% if DISPLAY_PAGES_ON_MENU %}
-                    {% for page in PAGES %}
-                    <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-                    {% endfor %}
-                    {% endif %}
-                    {% for cat, null in categories %}
-                    <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                    {% endfor %}
-                </ul></nav>
+        <header id="banner">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                    <nav><ul>
+                        {% for title, link in MENUITEMS %}
+                        <li><a href="{{ link }}">{{ title }}</a></li>
+                        {% endfor %}
+                        {% if DISPLAY_PAGES_ON_MENU %}
+                        {% for page in PAGES %}
+                        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+                        {% for cat, null in categories %}
+                        <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                        {% endfor %}
+                    </ul></nav>
+                </div>
             </div>
         </header><!-- /#banner -->
 
@@ -88,13 +90,15 @@
             </div>
         </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="row">
-            <div class="twelve columns">
-                <address id="about" class="vcard body">
-                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+        <footer id="contentinfo">
+            <div class="row">
+                <div class="twelve columns">
+                    <address id="about" class="vcard body">
+                        Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </address><!-- /#about -->
 
-                <p>Fork this pelican theme from our github repository <a href="https://github.com/sciencetoweb/pelican-newspaper-theme" title="Fork this theme on GitHub">Get newspaper theme</a></p>
+                    <p>Fork this pelican theme from our github repository <a href="https://github.com/sciencetoweb/pelican-newspaper-theme" title="Fork this theme on GitHub">Get newspaper theme</a></p>
+                </div>
             </div>
         </footer><!-- /#contentinfo -->
 
