@@ -1,0 +1,84 @@
+// Basic styling (default tags classes overriding)
+
+blockquote { 
+    margin-top: 25px; 
+    margin-bottom: 25px; 
+    text-align: left; 
+    text-indent: 16px; 
+    font-weight: 400; 
+    font-style: italic; 
+    color:$txtColor;
+}
+
+h1, h2, h3, h4, h5, h6 { & > a { border:none }}
+
+a { 
+    padding-bottom:-5px;
+    border-bottom: 1px dotted #ba0000;
+    &:hover {
+        border-bottom: 1px solid #ba0000;
+    }
+}
+
+h1 { 
+    margin-bottom: 25px; 
+    text-transform: capitalize; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 69px;
+    line-height: 100px; 
+}
+
+h2 { 
+    margin-top: 50px; 
+    margin-bottom: 25px; 
+    text-transform: capitalize; 
+    letter-spacing: 1px; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 30px; 
+    font-family: 'Crimson Text'; 
+    line-height: 25px; 
+}
+
+code { 
+    font-weight:normal;
+    padding:3px;
+}
+
+.published { 
+    margin-bottom:5px;
+}
+
+.author { 
+    margin-bottom: 25px; 
+    color: rgba(102, 100, 100, 1.00); 
+    text-indent: 0px; 
+    letter-spacing: 1px; 
+    font-size: 14px; 
+    font-style:normal;
+    & > a { 
+        text-transform:uppercase;
+    }
+}
+
+aside p { font-style:normal }
+
+p, ul > li {
+    font-size:1.5em!important;
+}
+
+p { 
+    margin-bottom: 10px;     
+
+    &.intro { 
+        margin-bottom: 25px; 
+        text-indent: 0px; 
+        letter-spacing: 0px; 
+        font-weight: 400; 
+        font-style: normal; 
+        font-size: 24px; 
+        font-family: 'Crimson Text'; 
+        line-height: 50px; 
+    }
+}

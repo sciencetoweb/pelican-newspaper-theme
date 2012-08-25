@@ -1,0 +1,17 @@
+// Articles styles
+
+.published { 
+    margin-bottom:5px;
+}
+
+.author { 
+    margin-bottom: 25px; 
+    color: rgba(102, 100, 100, 1.00); 
+    text-indent: 0px; 
+    letter-spacing: 1px; 
+    font-size: 14px; 
+    font-style:normal;
+    & > a { 
+        text-transform:uppercase;
+    }
+}

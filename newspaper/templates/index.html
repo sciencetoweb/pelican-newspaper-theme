@@ -6,8 +6,8 @@
 
         {# First item #}
         {% if loop.first and not articles_page.has_previous() %}
-            <aside id="featured" class="body">
-                <article>
+            <aside id="featured" class="row">
+                <article class="twelve columns">
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1> 
                     {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
                 </article>
@@ -16,16 +16,16 @@
                 {% endif %}
             </aside><!-- /#featured -->
             {% if loop.length > 1 %}
-                <section id="content" class="body">
+                <section id="content" class="row">
                     <h1>Other articles</h1>
                     <hr />
-                    <ol id="posts-list" class="hfeed">
+                    <ol id="posts-list" class="twelve columns hfeed">
             {% endif %}
         {# other items #}
         {% else %} 
             {% if loop.first and articles_page.has_previous %}
-                <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
+                <section id="content" class="row">
+                    <ol id="posts-list" class="twelve columns hfeed" start="{{ articles_paginator.per_page -1 }}">
             {% endif %}
             <li><article class="hentry">    
                 <header>
@@ -51,11 +51,13 @@
         {% endif %}
     {% endfor %}
 {% else %}
-<section id="content" class="body">    
+<section id="content" class="row">    
+    <div class="twelve columns">
 <h2>Pages</h2>
     {% for page in PAGES %}
         <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
+</div>
 </section>
 {% endif %}
 {% endblock content %}
