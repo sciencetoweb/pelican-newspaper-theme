@@ -40,7 +40,8 @@
         <header id="banner">
             <div class="row">
                 <div class="twelve columns">
-                    <h1><a href="{{ SITEURL }}">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                    <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+                    <div class="baseline">{% if SITESUBTITLE %}<span>{{ SITESUBTITLE }}</span>{% endif %}</div>
                     <nav><ul>
                         {% for title, link in MENUITEMS %}
                         <li><a href="{{ link }}">{{ title }}</a></li>
@@ -64,10 +65,10 @@
             <div class="row">
                 <div class="social four columns">
                     <h3>Stay tuned!</h3>
-                    <ul>
-                        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                    <ul class="feeds">
+                        <li class="atom"><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
                         {% if FEED_RSS %}
-                        <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
+                        <li class="rss"><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
                         {% endif %}
 
                         {% for name, link in SOCIAL %}
@@ -88,8 +89,12 @@
                     {% endif %}
                 </div>
                 <div class="four columns">
-                    <h3>Do you like this theme?</h3>
-                    <p>Fork it from <a href="https://github.com/sciencetoweb/pelican-newspaper-theme" title="Fork this theme on GitHub">Science To Web github repository</a>
+                    <h3>About us</h3>
+                    <ul>
+                    {% for page in PAGES %}
+                        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                    {% endfor %}
+                    </ul>
                 </div>
             </div>
             <div class="vspacer"/></div>
