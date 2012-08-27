@@ -5,9 +5,20 @@ body {
 #banner, #contentinfo{ 
     background-image:url("../images/newspaper/asfalt.png");
     color:$secondaryColor;
+    @include box-shadow(#333 0px 0px 10px);
     a { color:$secondaryColor }
 }
 
 #contentinfo { 
+    margin:20px 0 0 0;
     padding:20px 0;
+}
+
+ol.hfeed { 
+    list-style-type:none;
+    li {
+        padding:0 10px 10px;
+        margin-bottom:20px;
+        background-color:#e8e8e8;
+    }
 }

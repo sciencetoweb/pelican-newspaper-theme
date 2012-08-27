@@ -18,6 +18,9 @@ a {
     &:hover {
         border-bottom: 1px solid #990100;
     }
+    &.radius:hover { 
+        color:#e8e8e8!important; 
+    }
 }
 
 h1 { 
@@ -39,6 +42,10 @@ h2 {
     font-size: 30px; 
     font-family: 'Crimson Text'; 
     line-height: 25px; 
+}
+
+h3 { 
+    margin-top: 35px 
 }
 
 code { 
@@ -67,3 +74,5 @@ p {
         line-height: 50px; 
     }
 }
+
+.vspacer { clear:both; padding:35px 0; }

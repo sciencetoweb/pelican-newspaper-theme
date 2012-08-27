@@ -4218,8 +4218,12 @@ a {
 a:hover {
   border-bottom: 1px solid #990100;
 }
+/* line 21, ../sass/_base.scss */
+a.radius:hover {
+  color: #e8e8e8!important;
+}
 
-/* line 23, ../sass/_base.scss */
+/* line 26, ../sass/_base.scss */
 h1 {
   margin-bottom: 25px;
   text-transform: capitalize;
@@ -4229,7 +4233,7 @@ h1 {
   line-height: 100px;
 }
 
-/* line 32, ../sass/_base.scss */
+/* line 35, ../sass/_base.scss */
 h2 {
   margin-top: 50px;
   margin-bottom: 25px;
@@ -4242,28 +4246,33 @@ h2 {
   line-height: 25px;
 }
 
-/* line 44, ../sass/_base.scss */
+/* line 47, ../sass/_base.scss */
+h3 {
+  margin-top: 35px;
+}
+
+/* line 51, ../sass/_base.scss */
 code {
   font-weight: normal;
   font-size: 0.9em;
   padding: 3px;
 }
 
-/* line 50, ../sass/_base.scss */
+/* line 57, ../sass/_base.scss */
 aside p {
   font-style: normal;
 }
 
-/* line 52, ../sass/_base.scss */
+/* line 59, ../sass/_base.scss */
 p, ul > li {
   font-size: 1.5em!important;
 }
 
-/* line 56, ../sass/_base.scss */
+/* line 63, ../sass/_base.scss */
 p {
   margin-bottom: 10px;
 }
-/* line 59, ../sass/_base.scss */
+/* line 66, ../sass/_base.scss */
 p.intro {
   margin-bottom: 25px;
   text-indent: 0px;
@@ -4275,6 +4284,12 @@ p.intro {
   line-height: 50px;
 }
 
+/* line 78, ../sass/_base.scss */
+.vspacer {
+  clear: both;
+  padding: 35px 0;
+}
+
 /* line 1, ../sass/_page.scss */
 body {
   background-color: #f6f6f6;
@@ -4284,15 +4299,30 @@ body {
 #banner, #contentinfo {
   background-image: url("../images/newspaper/asfalt.png");
   color: white;
+  -webkit-box-shadow: #333333 0px 0px 10px;
+  -moz-box-shadow: #333333 0px 0px 10px;
+  box-shadow: #333333 0px 0px 10px;
 }
-/* line 8, ../sass/_page.scss */
+/* line 9, ../sass/_page.scss */
 #banner a, #contentinfo a {
   color: white;
 }
 
-/* line 11, ../sass/_page.scss */
+/* line 12, ../sass/_page.scss */
 #contentinfo {
+  margin: 20px 0 0 0;
   padding: 20px 0;
+}
+
+/* line 17, ../sass/_page.scss */
+ol.hfeed {
+  list-style-type: none;
+}
+/* line 19, ../sass/_page.scss */
+ol.hfeed li {
+  padding: 0 10px 10px;
+  margin-bottom: 20px;
+  background-color: #e8e8e8;
 }
 
 /* line 4, ../sass/_article.scss */
@@ -4324,7 +4354,7 @@ article img {
   text-transform: uppercase;
 }
 
-/* line 1, ../sass/_pygments.scss */
+/* line 4, ../sass/_pygments.scss */
 .codehilite {
   padding: 10px;
   margin: 20px 0;
@@ -4363,141 +4393,141 @@ article img {
   /* Literal.String.Single */
   /* Literal.String.Symbol */
 }
-/* line 5, ../sass/_pygments.scss */
+/* line 8, ../sass/_pygments.scss */
 .codehilite .codehilite .hll {
   background-color: #ffffcc;
 }
-/* line 6, ../sass/_pygments.scss */
+/* line 9, ../sass/_pygments.scss */
 .codehilite .codehilite .c {
   font-style: italic;
 }
-/* line 7, ../sass/_pygments.scss */
+/* line 10, ../sass/_pygments.scss */
 .codehilite .codehilite .err {
   border: 1px solid #FF0000;
 }
-/* line 8, ../sass/_pygments.scss */
+/* line 11, ../sass/_pygments.scss */
 .codehilite .codehilite .k {
   font-weight: bold;
 }
-/* line 9, ../sass/_pygments.scss */
+/* line 12, ../sass/_pygments.scss */
 .codehilite .codehilite .cm {
   font-style: italic;
 }
-/* line 10, ../sass/_pygments.scss */
+/* line 13, ../sass/_pygments.scss */
 .codehilite .codehilite .c1 {
   font-style: italic;
 }
-/* line 11, ../sass/_pygments.scss */
+/* line 14, ../sass/_pygments.scss */
 .codehilite .codehilite .cs {
   font-style: italic;
 }
-/* line 12, ../sass/_pygments.scss */
+/* line 15, ../sass/_pygments.scss */
 .codehilite .codehilite .ge {
   font-style: italic;
 }
-/* line 13, ../sass/_pygments.scss */
+/* line 16, ../sass/_pygments.scss */
 .codehilite .codehilite .gh {
   font-weight: bold;
 }
-/* line 14, ../sass/_pygments.scss */
+/* line 17, ../sass/_pygments.scss */
 .codehilite .codehilite .gp {
   font-weight: bold;
 }
-/* line 15, ../sass/_pygments.scss */
+/* line 18, ../sass/_pygments.scss */
 .codehilite .codehilite .gs {
   font-weight: bold;
 }
-/* line 16, ../sass/_pygments.scss */
+/* line 19, ../sass/_pygments.scss */
 .codehilite .codehilite .gu {
   font-weight: bold;
 }
-/* line 17, ../sass/_pygments.scss */
+/* line 20, ../sass/_pygments.scss */
 .codehilite .codehilite .kc {
   font-weight: bold;
 }
-/* line 18, ../sass/_pygments.scss */
+/* line 21, ../sass/_pygments.scss */
 .codehilite .codehilite .kd {
   font-weight: bold;
 }
-/* line 19, ../sass/_pygments.scss */
+/* line 22, ../sass/_pygments.scss */
 .codehilite .codehilite .kn {
   font-weight: bold;
 }
-/* line 20, ../sass/_pygments.scss */
+/* line 23, ../sass/_pygments.scss */
 .codehilite .codehilite .kr {
   font-weight: bold;
 }
-/* line 21, ../sass/_pygments.scss */
+/* line 24, ../sass/_pygments.scss */
 .codehilite .codehilite .s {
   font-style: italic;
 }
-/* line 22, ../sass/_pygments.scss */
+/* line 25, ../sass/_pygments.scss */
 .codehilite .codehilite .nc {
   font-weight: bold;
 }
-/* line 23, ../sass/_pygments.scss */
+/* line 26, ../sass/_pygments.scss */
 .codehilite .codehilite .ni {
   font-weight: bold;
 }
-/* line 24, ../sass/_pygments.scss */
+/* line 27, ../sass/_pygments.scss */
 .codehilite .codehilite .ne {
   font-weight: bold;
 }
-/* line 25, ../sass/_pygments.scss */
+/* line 28, ../sass/_pygments.scss */
 .codehilite .codehilite .nn {
   font-weight: bold;
 }
-/* line 26, ../sass/_pygments.scss */
+/* line 29, ../sass/_pygments.scss */
 .codehilite .codehilite .nt {
   font-weight: bold;
 }
-/* line 27, ../sass/_pygments.scss */
+/* line 30, ../sass/_pygments.scss */
 .codehilite .codehilite .ow {
   font-weight: bold;
 }
-/* line 28, ../sass/_pygments.scss */
+/* line 31, ../sass/_pygments.scss */
 .codehilite .codehilite .sb {
   font-style: italic;
 }
-/* line 29, ../sass/_pygments.scss */
+/* line 32, ../sass/_pygments.scss */
 .codehilite .codehilite .sc {
   font-style: italic;
 }
-/* line 30, ../sass/_pygments.scss */
+/* line 33, ../sass/_pygments.scss */
 .codehilite .codehilite .sd {
   font-style: italic;
 }
-/* line 31, ../sass/_pygments.scss */
+/* line 34, ../sass/_pygments.scss */
 .codehilite .codehilite .s2 {
   font-style: italic;
 }
-/* line 32, ../sass/_pygments.scss */
+/* line 35, ../sass/_pygments.scss */
 .codehilite .codehilite .se {
   font-weight: bold;
   font-style: italic;
 }
-/* line 33, ../sass/_pygments.scss */
+/* line 36, ../sass/_pygments.scss */
 .codehilite .codehilite .sh {
   font-style: italic;
 }
-/* line 34, ../sass/_pygments.scss */
+/* line 37, ../sass/_pygments.scss */
 .codehilite .codehilite .si {
   font-weight: bold;
   font-style: italic;
 }
-/* line 35, ../sass/_pygments.scss */
+/* line 38, ../sass/_pygments.scss */
 .codehilite .codehilite .sx {
   font-style: italic;
 }
-/* line 36, ../sass/_pygments.scss */
+/* line 39, ../sass/_pygments.scss */
 .codehilite .codehilite .sr {
   font-style: italic;
 }
-/* line 37, ../sass/_pygments.scss */
+/* line 40, ../sass/_pygments.scss */
 .codehilite .codehilite .s1 {
   font-style: italic;
 }
-/* line 38, ../sass/_pygments.scss */
+/* line 41, ../sass/_pygments.scss */
 .codehilite .codehilite .ss {
   font-style: italic;
 }

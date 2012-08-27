@@ -60,21 +60,10 @@
 
         {% block content %}{% endblock %}
 
-        <section id="extras" class="row">
-            <div class="twelve columns">
-                {% if LINKS %}
-                <div class="blogroll">
-                    <h2>blogroll</h2>
-                    <ul>
-                        {% for name, link in LINKS %}
-                        <li><a href="{{ link }}">{{ name }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div><!-- /.blogroll -->
-                {% endif %}
-                {% if SOCIAL %}
-                <div class="social">
-                    <h2>social</h2>
+        <footer id="contentinfo">
+            <div class="row">
+                <div class="social four columns">
+                    <h3>Stay tuned!</h3>
                     <ul>
                         <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
                         {% if FEED_RSS %}
@@ -85,19 +74,30 @@
                         <li><a href="{{ link }}">{{ name }}</a></li>
                         {% endfor %}
                     </ul>
-                </div><!-- /.social -->
-                {% endif %}
+                </div>                
+                <div class="four columns">
+                    {% if LINKS %}
+                    <div class="blogroll">
+                        <h3>Blog Roll</h3>
+                        <ul>
+                            {% for name, link in LINKS %}
+                            <li><a href="{{ link }}">{{ name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div><!-- /.blogroll -->
+                    {% endif %}
+                </div>
+                <div class="four columns">
+                    <h3>Do you like this theme?</h3>
+                    <p>Fork it from <a href="https://github.com/sciencetoweb/pelican-newspaper-theme" title="Fork this theme on GitHub">Science To Web github repository</a>
+                </div>
             </div>
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo">
-            <div class="row">
+            <div class="vspacer"/></div>
+            <div class="row">                
                 <div class="twelve columns">
                     <address id="about" class="vcard body">
                         Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                     </address><!-- /#about -->
-
-                    <p>Fork this pelican theme from our github repository <a href="https://github.com/sciencetoweb/pelican-newspaper-theme" title="Fork this theme on GitHub">Get newspaper theme</a></p>
                 </div>
             </div>
         </footer><!-- /#contentinfo -->
