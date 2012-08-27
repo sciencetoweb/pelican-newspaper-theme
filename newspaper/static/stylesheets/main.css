@@ -4300,47 +4300,48 @@ p {
 #banner nav ul li {
   float: left;
   padding-right: 10px;
+  text-transform: uppercase;
 }
-/* line 20, ../sass/_page.scss */
+/* line 21, ../sass/_page.scss */
 #banner nav ul li a {
   border-bottom: 0;
 }
-/* line 22, ../sass/_page.scss */
+/* line 23, ../sass/_page.scss */
 #banner nav ul li a:hover {
   border-bottom: 1px solid #990100;
 }
-/* line 30, ../sass/_page.scss */
+/* line 31, ../sass/_page.scss */
 #banner .baseline {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #b90504;
 }
-/* line 35, ../sass/_page.scss */
+/* line 36, ../sass/_page.scss */
 #banner .baseline span {
   padding: 3px 0 0;
   border-top: 1px solid #b90504;
   border-bottom: 1px solid #b90504;
 }
 
-/* line 44, ../sass/_page.scss */
+/* line 45, ../sass/_page.scss */
 #contentinfo {
   margin: 20px 0 0 0;
   padding: 20px 0;
 }
 
-/* line 49, ../sass/_page.scss */
+/* line 50, ../sass/_page.scss */
 ol.hfeed {
   list-style-type: none;
 }
-/* line 51, ../sass/_page.scss */
+/* line 52, ../sass/_page.scss */
 ol.hfeed li {
   margin-bottom: 20px;
   padding: 0 10px 10px;
   background-color: #e8e8e8;
 }
 
-/* line 58, ../sass/_page.scss */
+/* line 59, ../sass/_page.scss */
 .vspacer {
   clear: both;
   padding: 35px 0;
@@ -4379,7 +4380,7 @@ article footer.post-info .author > a {
 /* line 31, ../sass/_article.scss */
 article img {
   padding: 10px;
-  border: 1px solid #333333;
+  border: 1px solid #b90504;
 }
 /* line 36, ../sass/_article.scss */
 article .intro {
