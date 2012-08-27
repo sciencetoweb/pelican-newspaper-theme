@@ -1,0 +1,23 @@
+<footer class="post-footer-info">
+    <div class="row">
+        <div class="ten columns">
+            <p>This article was originally published 
+                <abbr class="published" title="{{ article.date.isoformat() }}">
+                    {{ article.locale_date }}
+                </abbr>
+                in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>.
+            </p>
+        </div>
+
+        <div class="two columns">
+            {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>{% endif %}    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            {% include 'taglist.html' %}
+        </div>
+    </div>
+    
+</footer><!-- /.post-footer-info -->
