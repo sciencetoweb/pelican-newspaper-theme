@@ -58,3 +58,14 @@ aside p { font-style:normal }
 p { 
     margin-bottom: 10px;     
 }
+
+ul { 
+    list-style:none;
+    li {
+        padding-left:1em;
+        text-indent:-0.7em;
+        &:before {
+            content: "≻ ";
+        }
+    }
+}

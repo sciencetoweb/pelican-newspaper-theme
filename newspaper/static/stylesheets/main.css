@@ -4270,6 +4270,20 @@ p {
   margin-bottom: 10px;
 }
 
+/* line 62, ../sass/_base.scss */
+ul {
+  list-style: none;
+}
+/* line 64, ../sass/_base.scss */
+ul li {
+  padding-left: 1em;
+  text-indent: -0.7em;
+}
+/* line 67, ../sass/_base.scss */
+ul li:before {
+  content: "≻ ";
+}
+
 /* line 2, ../sass/_page.scss */
 #banner, #contentinfo {
   background-image: url("../images/newspaper/asfalt.png");
@@ -4321,7 +4335,7 @@ p {
 #banner .baseline span {
   padding: 3px 0 0;
   border-top: 1px solid #b90504;
-  border-bottom: 1px solid #b90504;
+  #border-bottom: 1px solid #b90504;
 }
 
 /* line 45, ../sass/_page.scss */
