@@ -1,6 +1,3 @@
-body { 
-    background-color:#f6f6f6;
-}
 
 #banner, #contentinfo{ 
     background-image:url("../images/newspaper/asfalt.png");
@@ -21,4 +18,9 @@ ol.hfeed {
         margin-bottom:20px;
         background-color:#e8e8e8;
     }
+}
+
+.vspacer { 
+    clear:both; 
+    padding:35px 0; 
 }
