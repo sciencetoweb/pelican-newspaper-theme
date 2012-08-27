@@ -4331,56 +4331,26 @@ article img {
   border-left: 1px dotted #333;
   /* Comment */
   /* Error */
-  /* Generic */
   /* Keyword */
-  /* Literal */
-  /* Name */
-  /* Operator */
-  /* Other */
-  /* Punctuation */
   /* Comment.Multiline */
-  /* Comment.Preproc */
   /* Comment.Single */
   /* Comment.Special */
-  /* Generic.Deleted */
   /* Generic.Emph */
-  /* Generic.Error */
   /* Generic.Heading */
-  /* Generic.Inserted */
-  /* Generic.Output */
   /* Generic.Prompt */
   /* Generic.Strong */
   /* Generic.Subheading */
-  /* Generic.Traceback */
   /* Keyword.Constant */
   /* Keyword.Declaration */
   /* Keyword.Namespace */
-  /* Keyword.Pseudo */
   /* Keyword.Reserved */
-  /* Keyword.Type */
-  /* Literal.Date */
-  /* Literal.Number */
   /* Literal.String */
-  /* Name.Attribute */
-  /* Name.Builtin */
   /* Name.Class */
-  /* Name.Constant */
-  /* Name.Decorator */
   /* Name.Entity */
   /* Name.Exception */
-  /* Name.Function */
-  /* Name.Label */
   /* Name.Namespace */
-  /* Name.Other */
-  /* Name.Property */
   /* Name.Tag */
-  /* Name.Variable */
   /* Operator.Word */
-  /* Text.Whitespace */
-  /* Literal.Number.Float */
-  /* Literal.Number.Hex */
-  /* Literal.Number.Integer */
-  /* Literal.Number.Oct */
   /* Literal.String.Backtick */
   /* Literal.String.Char */
   /* Literal.String.Doc */
@@ -4392,318 +4362,142 @@ article img {
   /* Literal.String.Regex */
   /* Literal.String.Single */
   /* Literal.String.Symbol */
-  /* Name.Builtin.Pseudo */
-  /* Name.Variable.Class */
-  /* Name.Variable.Global */
-  /* Name.Variable.Instance */
-  /* Literal.Number.Integer.Long */
 }
 /* line 5, ../sass/_pygments.scss */
-.codehilite .hll {
+.codehilite .codehilite .hll {
   background-color: #ffffcc;
 }
 /* line 6, ../sass/_pygments.scss */
-.codehilite .c {
-  color: #8f5902;
+.codehilite .codehilite .c {
   font-style: italic;
 }
 /* line 7, ../sass/_pygments.scss */
-.codehilite .err {
-  color: #a40000;
-  border: 1px solid #ef2929;
+.codehilite .codehilite .err {
+  border: 1px solid #FF0000;
 }
 /* line 8, ../sass/_pygments.scss */
-.codehilite .g {
-  color: #000000;
+.codehilite .codehilite .k {
+  font-weight: bold;
 }
 /* line 9, ../sass/_pygments.scss */
-.codehilite .k {
-  color: #204a87;
-  font-weight: bold;
+.codehilite .codehilite .cm {
+  font-style: italic;
 }
 /* line 10, ../sass/_pygments.scss */
-.codehilite .l {
-  color: #000000;
+.codehilite .codehilite .c1 {
+  font-style: italic;
 }
 /* line 11, ../sass/_pygments.scss */
-.codehilite .n {
-  color: #000000;
+.codehilite .codehilite .cs {
+  font-style: italic;
 }
 /* line 12, ../sass/_pygments.scss */
-.codehilite .o {
-  color: #ce5c00;
-  font-weight: bold;
+.codehilite .codehilite .ge {
+  font-style: italic;
 }
 /* line 13, ../sass/_pygments.scss */
-.codehilite .x {
-  color: #000000;
+.codehilite .codehilite .gh {
+  font-weight: bold;
 }
 /* line 14, ../sass/_pygments.scss */
-.codehilite .p {
-  color: #000000;
+.codehilite .codehilite .gp {
   font-weight: bold;
 }
 /* line 15, ../sass/_pygments.scss */
-.codehilite .cm {
-  color: #8f5902;
-  font-style: italic;
+.codehilite .codehilite .gs {
+  font-weight: bold;
 }
 /* line 16, ../sass/_pygments.scss */
-.codehilite .cp {
-  color: #8f5902;
-  font-style: italic;
+.codehilite .codehilite .gu {
+  font-weight: bold;
 }
 /* line 17, ../sass/_pygments.scss */
-.codehilite .c1 {
-  color: #8f5902;
-  font-style: italic;
+.codehilite .codehilite .kc {
+  font-weight: bold;
 }
 /* line 18, ../sass/_pygments.scss */
-.codehilite .cs {
-  color: #8f5902;
-  font-style: italic;
+.codehilite .codehilite .kd {
+  font-weight: bold;
 }
 /* line 19, ../sass/_pygments.scss */
-.codehilite .gd {
-  color: #a40000;
+.codehilite .codehilite .kn {
+  font-weight: bold;
 }
 /* line 20, ../sass/_pygments.scss */
-.codehilite .ge {
-  color: #000000;
-  font-style: italic;
+.codehilite .codehilite .kr {
+  font-weight: bold;
 }
 /* line 21, ../sass/_pygments.scss */
-.codehilite .gr {
-  color: #ef2929;
+.codehilite .codehilite .s {
+  font-style: italic;
 }
 /* line 22, ../sass/_pygments.scss */
-.codehilite .gh {
-  color: #000080;
+.codehilite .codehilite .nc {
   font-weight: bold;
 }
 /* line 23, ../sass/_pygments.scss */
-.codehilite .gi {
-  color: #00A000;
+.codehilite .codehilite .ni {
+  font-weight: bold;
 }
 /* line 24, ../sass/_pygments.scss */
-.codehilite .go {
-  color: #000000;
-  font-style: italic;
+.codehilite .codehilite .ne {
+  font-weight: bold;
 }
 /* line 25, ../sass/_pygments.scss */
-.codehilite .gp {
-  color: #8f5902;
+.codehilite .codehilite .nn {
+  font-weight: bold;
 }
 /* line 26, ../sass/_pygments.scss */
-.codehilite .gs {
-  color: #000000;
+.codehilite .codehilite .nt {
   font-weight: bold;
 }
 /* line 27, ../sass/_pygments.scss */
-.codehilite .gu {
-  color: #800080;
+.codehilite .codehilite .ow {
   font-weight: bold;
 }
 /* line 28, ../sass/_pygments.scss */
-.codehilite .gt {
-  color: #a40000;
-  font-weight: bold;
-}
-/* line 29, ../sass/_pygments.scss */
-.codehilite .kc {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 30, ../sass/_pygments.scss */
-.codehilite .kd {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 31, ../sass/_pygments.scss */
-.codehilite .kn {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 32, ../sass/_pygments.scss */
-.codehilite .kp {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 33, ../sass/_pygments.scss */
-.codehilite .kr {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 34, ../sass/_pygments.scss */
-.codehilite .kt {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 35, ../sass/_pygments.scss */
-.codehilite .ld {
-  color: #000000;
-}
-/* line 36, ../sass/_pygments.scss */
-.codehilite .m {
-  color: #0000cf;
-  font-weight: bold;
-}
-/* line 37, ../sass/_pygments.scss */
-.codehilite .s {
-  color: #4e9a06;
-}
-/* line 38, ../sass/_pygments.scss */
-.codehilite .na {
-  color: #c4a000;
-}
-/* line 39, ../sass/_pygments.scss */
-.codehilite .nb {
-  color: #204a87;
-}
-/* line 40, ../sass/_pygments.scss */
-.codehilite .nc {
-  color: #000000;
-}
-/* line 41, ../sass/_pygments.scss */
-.codehilite .no {
-  color: #000000;
-}
-/* line 42, ../sass/_pygments.scss */
-.codehilite .nd {
-  color: #5c35cc;
-  font-weight: bold;
-}
-/* line 43, ../sass/_pygments.scss */
-.codehilite .ni {
-  color: #ce5c00;
-}
-/* line 44, ../sass/_pygments.scss */
-.codehilite .ne {
-  color: #cc0000;
-  font-weight: bold;
-}
-/* line 45, ../sass/_pygments.scss */
-.codehilite .nf {
-  color: #000000;
-}
-/* line 46, ../sass/_pygments.scss */
-.codehilite .nl {
-  color: #f57900;
-}
-/* line 47, ../sass/_pygments.scss */
-.codehilite .nn {
-  color: #000000;
-}
-/* line 48, ../sass/_pygments.scss */
-.codehilite .nx {
-  color: #000000;
-}
-/* line 49, ../sass/_pygments.scss */
-.codehilite .py {
-  color: #000000;
-}
-/* line 50, ../sass/_pygments.scss */
-.codehilite .nt {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 51, ../sass/_pygments.scss */
-.codehilite .nv {
-  color: #000000;
-}
-/* line 52, ../sass/_pygments.scss */
-.codehilite .ow {
-  color: #204a87;
-  font-weight: bold;
-}
-/* line 53, ../sass/_pygments.scss */
-.codehilite .w {
-  color: #f8f8f8;
-  text-decoration: underline;
-}
-/* line 54, ../sass/_pygments.scss */
-.codehilite .mf {
-  color: #0000cf;
-  font-weight: bold;
-}
-/* line 55, ../sass/_pygments.scss */
-.codehilite .mh {
-  color: #0000cf;
-  font-weight: bold;
-}
-/* line 56, ../sass/_pygments.scss */
-.codehilite .mi {
-  color: #0000cf;
-  font-weight: bold;
-}
-/* line 57, ../sass/_pygments.scss */
-.codehilite .mo {
-  color: #0000cf;
-  font-weight: bold;
-}
-/* line 58, ../sass/_pygments.scss */
-.codehilite .sb {
-  color: #4e9a06;
-}
-/* line 59, ../sass/_pygments.scss */
-.codehilite .sc {
-  color: #4e9a06;
-}
-/* line 60, ../sass/_pygments.scss */
-.codehilite .sd {
-  color: #8f5902;
+.codehilite .codehilite .sb {
   font-style: italic;
 }
-/* line 61, ../sass/_pygments.scss */
-.codehilite .s2 {
-  color: #4e9a06;
+/* line 29, ../sass/_pygments.scss */
+.codehilite .codehilite .sc {
+  font-style: italic;
 }
-/* line 62, ../sass/_pygments.scss */
-.codehilite .se {
-  color: #4e9a06;
+/* line 30, ../sass/_pygments.scss */
+.codehilite .codehilite .sd {
+  font-style: italic;
 }
-/* line 63, ../sass/_pygments.scss */
-.codehilite .sh {
-  color: #4e9a06;
+/* line 31, ../sass/_pygments.scss */
+.codehilite .codehilite .s2 {
+  font-style: italic;
 }
-/* line 64, ../sass/_pygments.scss */
-.codehilite .si {
-  color: #4e9a06;
-}
-/* line 65, ../sass/_pygments.scss */
-.codehilite .sx {
-  color: #4e9a06;
-}
-/* line 66, ../sass/_pygments.scss */
-.codehilite .sr {
-  color: #4e9a06;
-}
-/* line 67, ../sass/_pygments.scss */
-.codehilite .s1 {
-  color: #4e9a06;
-}
-/* line 68, ../sass/_pygments.scss */
-.codehilite .ss {
-  color: #4e9a06;
-}
-/* line 69, ../sass/_pygments.scss */
-.codehilite .bp {
-  color: #3465a4;
-}
-/* line 70, ../sass/_pygments.scss */
-.codehilite .vc {
-  color: #000000;
-}
-/* line 71, ../sass/_pygments.scss */
-.codehilite .vg {
-  color: #000000;
-}
-/* line 72, ../sass/_pygments.scss */
-.codehilite .vi {
-  color: #000000;
-}
-/* line 73, ../sass/_pygments.scss */
-.codehilite .il {
-  color: #0000cf;
+/* line 32, ../sass/_pygments.scss */
+.codehilite .codehilite .se {
   font-weight: bold;
+  font-style: italic;
+}
+/* line 33, ../sass/_pygments.scss */
+.codehilite .codehilite .sh {
+  font-style: italic;
+}
+/* line 34, ../sass/_pygments.scss */
+.codehilite .codehilite .si {
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 35, ../sass/_pygments.scss */
+.codehilite .codehilite .sx {
+  font-style: italic;
+}
+/* line 36, ../sass/_pygments.scss */
+.codehilite .codehilite .sr {
+  font-style: italic;
+}
+/* line 37, ../sass/_pygments.scss */
+.codehilite .codehilite .s1 {
+  font-style: italic;
+}
+/* line 38, ../sass/_pygments.scss */
+.codehilite .codehilite .ss {
+  font-style: italic;
 }
