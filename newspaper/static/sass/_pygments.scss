@@ -4,7 +4,7 @@
 .codehilite {
     padding:10px;
     margin:20px 0;
-    border-left:1px dotted #333;
+    border-left:1px dotted $txtColor;
     .codehilite .hll { background-color: #ffffcc }
     .codehilite .c { font-style: italic } /* Comment */
     .codehilite .err { border: 1px solid #FF0000 } /* Error */

@@ -1,6 +1,6 @@
 // Basic styling (default tags classes overriding)
 body { 
-    background-color:#f6f6f6;
+    background-color:$color1;
 }
 
 blockquote { 
@@ -17,9 +17,9 @@ h1, h2, h3, h4, h5, h6 { & > a { border:none }}
 
 a { 
     padding-bottom:-5px;
-    border-bottom: 1px dotted #990100;
+    border-bottom: 1px dotted $color4;
     &:hover {
-        border-bottom: 1px solid #990100;
+        border-bottom: 1px solid $color4;
     }
     &.radius:hover { 
         color:#e8e8e8!important; 

@@ -2,7 +2,8 @@
 
 article { 
     .entry-title {
-        border-bottom:1px solid #333;
+        border-bottom:1px solid $txtColor;
+        padding-bottom:10px;
     }
 
     footer.post-info {
@@ -29,13 +30,13 @@ article {
 
     img {
         padding:10px; 
-        border:1px solid #ccc;
+        border:1px solid $txtColor;
     }
 
     .intro { 
         margin: 25px 0px; 
         padding:20px; 
-        background-color:#e6e6e6;
+        background-color:$color2;
         text-indent: 0px; 
         letter-spacing: 0px; 
         font-weight: 400;
@@ -46,7 +47,7 @@ article {
         margin:40px 0 20px;
         padding:20px;
         border-top:1px solid $txtColor;
-        background-color:#e6e6e6;
+        background-color:$color2;
         font-size:0.6em;
     }
 }

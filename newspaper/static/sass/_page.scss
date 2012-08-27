@@ -2,8 +2,43 @@
 #banner, #contentinfo{ 
     background-image:url("../images/newspaper/asfalt.png");
     color:$secondaryColor;
-    @include box-shadow(#333 0px 0px 10px);
-    a { color:$secondaryColor }
+    @include box-shadow($txtColor 0px 0px 10px);
+    a { color:$secondaryColor; }
+}
+
+#banner {
+    h1 { 
+        line-height:normal;
+        margin:0 0 5px;
+    }
+    nav {
+        ul {
+            list-style-type:none;
+            li {
+                float:left;
+                padding-right:10px;
+                a { 
+                    border-bottom:0;
+                    &:hover {
+                        border-bottom: 1px solid $color4;
+                    }
+                }
+            }
+        }
+        padding-bottom:30px;
+    }
+    .baseline { 
+        font-weight:normal;
+        text-transform:uppercase;
+        letter-spacing:2px;
+        color:$color5;
+        span {
+            padding:3px 0 0;
+            border-top: 1px solid $color5;
+            border-bottom: 1px solid $color5;
+        }
+        
+    }
 }
 
 #contentinfo { 
@@ -14,9 +49,9 @@
 ol.hfeed { 
     list-style-type:none;
     li {
-        padding:0 10px 10px;
         margin-bottom:20px;
-        background-color:#e8e8e8;
+        padding:0 10px 10px;
+        background-color:$color2;
     }
 }
 
