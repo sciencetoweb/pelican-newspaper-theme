@@ -1,65 +1,75 @@
 // Basic styling (default tags classes overriding)
-body { 
+body {
     background-color:$color1;
 }
 
-blockquote { 
-    margin: 25px 0; 
-    text-align: left; 
-    text-indent: 16px; 
+blockquote {
+    margin: 25px 0;
+    text-align: left;
+    text-indent: 16px;
     font-weight: 400;
     p {
-        font-style: italic!important; 
+        font-style: italic!important;
     }
 }
 
 h1, h2, h3, h4, h5, h6 { & > a { border:none }}
 
-a { 
+a {
     padding-bottom:-5px;
     border-bottom: 1px dotted $color4;
     &:hover {
         border-bottom: 1px solid $color4;
     }
-    &.radius:hover { 
-        color:#e8e8e8!important; 
+    &.radius:hover {
+        color:#e8e8e8!important;
     }
 }
 
-h1 { 
-    margin-bottom: 25px; 
-    text-transform: capitalize; 
-    font-weight: 400; 
-    font-style: normal; 
-    line-height: 100px; 
+h1 {
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100px;
 }
 
-h2 { 
-    margin-top: 50px; 
-    margin-bottom: 25px; 
-    text-transform: capitalize; 
-    letter-spacing: 1px; 
-    font-weight: 400; 
-    font-style: normal; 
-    font-family: 'Crimson Text'; 
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Crimson Text';
 }
 
-h3 { 
+h3 {
     margin-top: 35px;
 }
 
-code { 
+code {
     font-weight:normal;
     padding:3px;
 }
 
 aside p { font-style:normal }
 
-p { 
-    margin-bottom: 10px;     
+p {
+    margin-bottom: 10px;
+
+    // Avoid long links/words breaking the container
+    // http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+    -ms-word-break: break-all;
+    word-break: break-all;
+    // Non standard for webkit
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
-ul { 
+ul {
     list-style:none;
     li {
         padding-left:1em;

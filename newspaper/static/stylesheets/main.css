@@ -4268,18 +4268,24 @@ aside p {
 /* line 58, ../sass/_base.scss */
 p {
   margin-bottom: 10px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
-/* line 62, ../sass/_base.scss */
+/* line 72, ../sass/_base.scss */
 ul {
   list-style: none;
 }
-/* line 64, ../sass/_base.scss */
+/* line 74, ../sass/_base.scss */
 ul li {
   padding-left: 1em;
   text-indent: -0.7em;
 }
-/* line 67, ../sass/_base.scss */
+/* line 77, ../sass/_base.scss */
 ul li:before {
   content: "≻ ";
 }
